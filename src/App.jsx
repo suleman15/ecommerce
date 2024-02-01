@@ -4,6 +4,7 @@ import { Login, Navbar, Register } from "./Component";
 import { useSelector } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ProductByCategory from "./Component/ProductByCategory";
 
 function App() {
   const { active } = useSelector((state) => state.tab);
@@ -16,9 +17,8 @@ function App() {
       {active == "login" && <Login />}
       {active == "register" && <Register />}
       <Navbar />
+      <ProductByCategory />
       <ToastContainer />
-
-      {JSON.stringify(user)}
     </>
   );
 }

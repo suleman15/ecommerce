@@ -92,6 +92,7 @@ const Login = () => {
               console.log("Google button clicked!");
               const loginAcc = await signInWithPopup(auth, googleProvider);
               dispatch(setUser(loginAcc));
+              dispatch(setTab(""));
             }}
           >
             Google

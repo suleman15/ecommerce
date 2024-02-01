@@ -22,3 +22,5 @@ export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
 export const facebookProvider = new FacebookAuthProvider();
 export const githubProvider = new GithubAuthProvider();
+// https://mern-test-1-34837.firebaseapp.com/__/auth/handler
+//
